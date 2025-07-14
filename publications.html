@@ -4,7 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Publicaciones - José Fuentes</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" xintegrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+        .publication-item {
+            transition: background-color 0.2s ease-in-out;
+        }
+        .publication-item:hover {
+            background-color: #f8f9fa;
+        }
+    </style>
 </head>
 <body>
     <!-- Barra de navegación -->
@@ -28,11 +37,116 @@
         </div>
     </nav>
 
-    <div class="container">
-        <h1 class="mb-4">Publicaciones</h1>
-        <!-- Aquí puedes agregar el contenido específico de publicaciones -->
+    <div class="container my-5">
+        <div class="text-center mb-5">
+            <h1 class="display-4 fw-bold">Producción Científica y Académica</h1>
+            <p class="lead text-muted">
+                Un compendio de mis contribuciones a la comunidad científica a través de artículos, capítulos de libros, ponencias y talleres.
+            </p>
+        </div>
+
+        <!-- === SECCIÓN 1: PUBLICACIONES CIENTÍFICAS === -->
+        <h2 class="h3 fw-bold border-bottom pb-2 mb-4">Publicaciones Científicas</h2>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item publication-item py-3">
+                <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1 fw-bold">Inteligencia Artificial en el área de enseñanza a las matemáticas</h5>
+                    <small class="text-muted">2024</small>
+                </div>
+                <p class="mb-1">Carrasco Valenzuela A., Fuentes Velásquez J. Capítulo de libro "Educación 5.0 Tendencias Tecnológicas Educativas". Editorial Racionalidades.</p>
+            </li>
+            <li class="list-group-item publication-item py-3">
+                <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1 fw-bold">Comparación de técnicas de clasificación de aprendizaje automático para detección de spam en correos electrónicos</h5>
+                    <small class="text-muted">2024</small>
+                </div>
+                <p class="mb-1">Fuentes Velásquez, J. A., & Vásquez Flores, E. J. Publicado en "Revista Científica de El Salvador".</p>
+            </li>
+            <li class="list-group-item publication-item py-3">
+                <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1 fw-bold">YOLOV3: una solución avanzada para el conteo de objetos en tiempo real</h5>
+                    <small class="text-muted">2023</small>
+                </div>
+                <p class="mb-1">Fuentes Velásquez, J. A., & Vásquez Flores, E. J. Publicado en "Revista de Investigación".</p>
+                <a href="https://doi.org/10.5377/revunivo.v2i14.17011" target="_blank" class="btn btn-sm btn-outline-primary mt-2"><i class="bi bi-box-arrow-up-right"></i> Ver DOI</a>
+            </li>
+            <li class="list-group-item publication-item py-3">
+                <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1 fw-bold">Evolución de las Preferencias de Ingreso Universitario, Un Enfoque de Minería de Datos con CRISP-DM</h5>
+                    <small class="text-muted">2023</small>
+                </div>
+                <p class="mb-1">Publicado en "Revista de Investigación".</p>
+                <a href="https://doi.org/10.5377/revunivo.V1318.16599" target="_blank" class="btn btn-sm btn-outline-primary mt-2"><i class="bi bi-box-arrow-up-right"></i> Ver DOI</a>
+            </li>
+            <li class="list-group-item publication-item py-3">
+                <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1 fw-bold">Computer Vision Extended Perception System for Blind People</h5>
+                    <small class="text-muted">2022</small>
+                </div>
+                <p class="mb-1">Machado, F., Marroquin, A., & Fuentes, J. A. Publicado en "2022 IEEE 40th Central America and Panama Convention (CONCAPAN)".</p>
+                <a href="https://doi.org/10.1109/concapan48024.2022.9997641" target="_blank" class="btn btn-sm btn-outline-primary mt-2"><i class="bi bi-box-arrow-up-right"></i> Ver DOI</a>
+            </li>
+             <li class="list-group-item publication-item py-3">
+                <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1 fw-bold">Estimación de proyecciones para determinar el alcance de una endemia o epidemia</h5>
+                    <small class="text-muted">2023</small>
+                </div>
+                <p class="mb-1">Hernández Pérez, J. A., & Fuentes Velásquez, J. A. Publicado en "Revista de Investigación".</p>
+                <a href="https://doi.org/10.5377/revunivo.v12112.15754" target="_blank" class="btn btn-sm btn-outline-primary mt-2"><i class="bi bi-box-arrow-up-right"></i> Ver DOI</a>
+            </li>
+        </ul>
+
+        <!-- === SECCIÓN 2: PONENCIAS Y CHARLAS === -->
+        <h2 class="h3 fw-bold border-bottom pb-2 mb-4 mt-5">Ponencias y Charlas Relevantes</h2>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item publication-item py-3">
+                <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1 fw-bold">Taller: Transferencia metodológica de currículo de Marketing Digital</h5>
+                    <small class="text-muted">2024</small>
+                </div>
+                <p class="mb-1">Impartido en Honduras, Guatemala y El Salvador como parte del proyecto "Promoción del Empleo Juvenil y de la Resiliencia en Centroamérica (CaPAZ II)".</p>
+            </li>
+            <li class="list-group-item publication-item py-3">
+                <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1 fw-bold">Perspectivas de empleo en la Industria 4.0, con énfasis en Inteligencia Artificial</h5>
+                    <small class="text-muted">2024</small>
+                </div>
+                <p class="mb-1">Ponencia presentada en el Congreso de Empleabilidad FUSALMO.</p>
+            </li>
+            <li class="list-group-item publication-item py-3">
+                <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1 fw-bold">Taller: Introducción al ChatGPT: Uso del ChatGPT en la docencia</h5>
+                    <small class="text-muted">2023</small>
+                </div>
+                <p class="mb-1">Taller impartido en la Universidad de Oriente.</p>
+            </li>
+            <li class="list-group-item publication-item py-3">
+                <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1 fw-bold">Panelista en el evento internacional EBSCO Day 2022 El Salvador</h5>
+                    <small class="text-muted">2022</small>
+                </div>
+                <p class="mb-1">Participación como experto en el panel del evento.</p>
+            </li>
+             <li class="list-group-item publication-item py-3">
+                <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1 fw-bold">Webinar: Deep Learning: Convoluciones y la detección de objetos</h5>
+                    <small class="text-muted">2020</small>
+                </div>
+                <p class="mb-1">Seminario en línea sobre los fundamentos de las redes neuronales convolucionales.</p>
+            </li>
+        </ul>
+        <div class="text-center mt-4">
+             <a href="https://orcid.org/0000-0001-7013-108X" target="_blank" class="btn btn-dark"><i class="bi bi-person-fill"></i> Ver perfil completo en ORCID</a>
+        </div>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3 mt-5">
+        <div class="container">
+            <p>&copy; 2025 José Fuentes. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" xintegrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>

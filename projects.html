@@ -4,10 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyectos - José Fuentes</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" xintegrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        /* Estilos personalizados opcionales para mejorar la apariencia */
+        .card {
+            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+        }
+        .badge {
+            font-weight: 500;
+        }
+    </style>
 </head>
 <body>
-    <!-- Barra de navegación -->
+    <!-- Barra de navegación (del archivo base) -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-4">
         <div class="container-fluid">
             <a class="navbar-brand" href="index.html">José Fuentes</a>
@@ -28,11 +41,143 @@
         </div>
     </nav>
 
-    <div class="container">
-        <h1 class="mb-4">Proyectos</h1>
-        <!-- Aquí puedes agregar el contenido específico de la página de proyectos -->
+    <div class="container my-5">
+        <!-- Encabezado de la sección de proyectos -->
+        <div class="text-center mb-5">
+            <h1 class="display-4 fw-bold">Portafolio de Proyectos</h1>
+            <p class="lead text-muted">
+                Una selección de proyectos de investigación, análisis de datos y consultoría que demuestran la aplicación práctica de la tecnología y la ciencia para resolver problemas complejos.
+            </p>
+        </div>
+
+        <!-- === CATEGORÍA 1: IA Y MODELAMIENTO === -->
+        <h2 class="h3 fw-bold border-bottom pb-2 mb-4 mt-5">Inteligencia Artificial y Modelamiento Computacional</h2>
+        <div class="row g-4">
+            <div class="col-md-6">
+                <div class="card h-100">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title fw-bold">Simulación de Ondas Sísmicas con PINNs</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Tesis de Maestría (2024)</h6>
+                        <p class="card-text">Investigación que compara Redes Neuronales Informadas por la Física (PINNs) con métodos numéricos tradicionales para la simulación de fenómenos geofísicos.</p>
+                        <div class="mt-auto">
+                            <span class="badge bg-primary-subtle text-primary-emphasis">ML</span>
+                            <span class="badge bg-primary-subtle text-primary-emphasis">Python</span>
+                            <span class="badge bg-primary-subtle text-primary-emphasis">PINNs</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card h-100">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title fw-bold">Sistema de Percepción Extendida para No Videntes</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">UNIVO & UDB (2020)</h6>
+                        <p class="card-text">Desarrollo de un sistema de Computer Vision para asistir a personas con discapacidad visual mediante algoritmos de reconocimiento de objetos en tiempo real.</p>
+                        <div class="mt-auto">
+                            <span class="badge bg-primary-subtle text-primary-emphasis">IA</span>
+                            <span class="badge bg-primary-subtle text-primary-emphasis">Computer Vision</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card h-100">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title fw-bold">Deep Learning para Diagnóstico de Enfermedades Respiratorias</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Proyecto de Investigación (2020)</h6>
+                        <p class="card-text">Aplicación de redes neuronales convolucionales y visión por computadora para el análisis y diagnóstico asistido de imágenes médicas respiratorias.</p>
+                        <div class="mt-auto">
+                            <span class="badge bg-primary-subtle text-primary-emphasis">Deep Learning</span>
+                            <span class="badge bg-success-subtle text-success-emphasis">Salud</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card h-100">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title fw-bold">Modelamiento Matemático de Epidemias</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Colaboración MINED/UNIVO (2020)</h6>
+                        <p class="card-text">Estimación de proyecciones para determinar el alcance de una epidemia en una población específica utilizando modelos matemáticos y Python.</p>
+                        <div class="mt-auto">
+                            <span class="badge bg-primary-subtle text-primary-emphasis">Análisis Numérico</span>
+                            <span class="badge bg-primary-subtle text-primary-emphasis">Modelamiento</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- === CATEGORÍA 2: ANÁLISIS DE DATOS Y PROYECTOS SOCIALES === -->
+        <h2 class="h3 fw-bold border-bottom pb-2 mb-4 mt-5">Análisis de Datos y Proyectos de Impacto Social</h2>
+        <div class="row g-4">
+            <div class="col-md-6">
+                <div class="card h-100">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title fw-bold">Análisis de Preferencias de Ingreso Universitario</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Investigación UES (2023)</h6>
+                        <p class="card-text">Aplicación de la metodología CRISP-DM para un estudio de minería de datos sobre las preferencias de ingreso de los aspirantes a la universidad.</p>
+                        <div class="mt-auto">
+                            <span class="badge bg-secondary-subtle text-secondary-emphasis">Big Data</span>
+                            <span class="badge bg-secondary-subtle text-secondary-emphasis">CRISP-DM</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card h-100">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title fw-bold">Levantamiento de Línea Base en La Unión</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Asocio UNIVO-Save The Children (2023)</h6>
+                        <p class="card-text">Diseño de metodología y muestreo para censos poblacionales en 9 municipios, incluyendo un protocolo para investigación sobre bullying escolar.</p>
+                        <div class="mt-auto">
+                            <span class="badge bg-secondary-subtle text-secondary-emphasis">MERA</span>
+                            <span class="badge bg-warning-subtle text-warning-emphasis">Social</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- === CATEGORÍA 3: CONSULTORÍA Y DISEÑO ESTRATÉGICO === -->
+        <h2 class="h3 fw-bold border-bottom pb-2 mb-4 mt-5">Consultoría y Diseño Estratégico</h2>
+        <div class="row g-4">
+            <div class="col-md-6">
+                <div class="card h-100">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title fw-bold">Consultor en Formación Técnica en Marketing Digital</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">FUSALMO, GIZ, MISEREOR (2024-2025)</h6>
+                        <p class="card-text">Diseñador instruccional y facilitador para mallas curriculares de Marketing Digital con enfoque integral y psico-emocional para proyectos de empleabilidad juvenil.</p>
+                        <div class="mt-auto">
+                            <span class="badge bg-info-subtle text-info-emphasis">Consultoría</span>
+                            <span class="badge bg-info-subtle text-info-emphasis">Diseño Curricular</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card h-100">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title fw-bold">Estudios de Mercado y Pertinencia para Posgrados</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Escuela de Posgrado, UES (2024)</h6>
+                        <p class="card-text">Diseño y análisis de estudios de mercado y competencia para informar decisiones estratégicas en la oferta de maestrías y formación continua a nivel nacional.</p>
+                        <div class="mt-auto">
+                            <span class="badge bg-info-subtle text-info-emphasis">Análisis de Mercado</span>
+                            <span class="badge bg-info-subtle text-info-emphasis">Estrategia</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3 mt-5">
+        <div class="container">
+            <p>&copy; 2025 José Fuentes. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" xintegrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
